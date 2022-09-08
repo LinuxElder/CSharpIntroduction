@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Microsoft.VisualBasic;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 Console.WriteLine("Hello, World!");
@@ -39,4 +40,6 @@ Console.WriteLine("Hello " + "World");
 // Example 
 Console.WriteLine("Hello \n" + "World");
 
-
+// STRING.FORMAT
+/* Formats an object, you specify the formatting you wish to perform, the following formats an integer and displays the currency symbol. */
+Console.WriteLine(string.Format("{0:C}", 5));
