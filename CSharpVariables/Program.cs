@@ -60,8 +60,22 @@ Console.WriteLine(string.Format("{0:C}", 5) + "\n");
 Console.WriteLine("IF Statement");
 if (year > 2010)
 {
-    Console.WriteLine("Year is greater than 2010");
+    Console.WriteLine("Year is greater than 2010 \n");
 }
 
+
+// IF ELSE
+// //Example
+
+Console.WriteLine("IF ELSE Statement");
+if (year > 2023)
+{
+    Console.WriteLine("Hello World " + year);
+}
+
+else
+{
+    Console.WriteLine("The year is " + year + "\n");
+}
 
 
