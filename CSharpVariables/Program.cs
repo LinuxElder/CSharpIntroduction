@@ -23,8 +23,8 @@ DataType[ ] ArrayName = { Comma Separated Values } // Array of any size
 DataType[] ArrayName = new DataType[3] {Command Separated Values } //Expects 3 values */
 
 // EXAMPLE
-string[] BestGames = {"GTA 5", "Fifa 2022"};
-string[] BestMovies = new string[3] { "Fantastic Beasts", "22 Jump Street", "How To Train Your Gragon"};
+string[] BestGames = { "GTA 5", "Fifa 2022" };
+string[] BestMovies = new string[3] { "Fantastic Beasts", "22 Jump Street", "How To Train Your Gragon" };
 Console.WriteLine(BestGames[0]);
 Console.WriteLine(BestMovies[0]);
 
@@ -38,3 +38,5 @@ Console.WriteLine("Hello " + "World");
 // New Line
 // Example 
 Console.WriteLine("Hello \n" + "World");
+
+
