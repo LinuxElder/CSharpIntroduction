@@ -15,6 +15,7 @@ Console.WriteLine("Hello, World!");
 // EXAMPLE
 string myname = "Simbarashe Marimo";
 int myage = 25;
+int year = 2022;
 Console.WriteLine("My name is " + myname + " and I am " + myage + " years old.\n");
 
 // Arrays
@@ -41,5 +42,20 @@ Console.WriteLine("Hello " + "World");
 Console.WriteLine("Hello \n" + "World");
 
 // STRING.FORMAT
-/* Formats an object, you specify the formatting you wish to perform, the following formats an integer and displays the currency symbol. */
+/* Formats an object, you specify the formatting you wish to perform, the following formats an integer and displays the currency symbol. In my case the US dollar Sign*/
 Console.WriteLine(string.Format("{0:C}", 5));
+
+// IF STATEMENTS
+/* if statement is used to execute code based on a condition the condition must evaluate to true for the code to execute.
+  SYNTAX
+        if (true)
+                {
+                    statements
+                }
+ */
+
+// Example
+if (year > 2010)
+{
+    Console.WriteLine("Year is greater than 2010");
+}
