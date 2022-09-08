@@ -16,7 +16,8 @@ Console.WriteLine("Hello, World!");
 string myname = "Simbarashe Marimo";
 int myage = 25;
 int year = 2022;
-Console.WriteLine("My name is " + myname + " and I am " + myage + " years old.\n");
+Console.WriteLine("My name is " + myname + " and I am " + myage + " years old.");
+Console.WriteLine("Current year is " + year + "\n");
 
 // Arrays
 /* Arrays are similar to variables, but can hold more than one value.
@@ -28,7 +29,7 @@ DataType[] ArrayName = new DataType[3] {Command Separated Values } //Expects 3 v
 string[] BestGames = { "GTA 5", "Fifa 2022" };
 string[] BestMovies = new string[3] { "Fantastic Beasts", "22 Jump Street", "How To Train Your Gragon" };
 Console.WriteLine(BestGames[0]);
-Console.WriteLine(BestMovies[0]);
+Console.WriteLine(BestMovies[0] + "\n");
 
 //STRINGS
 /* CONCATENATION
@@ -39,11 +40,12 @@ Console.WriteLine("Hello " + "World");
 
 // New Line
 // Example 
-Console.WriteLine("Hello \n" + "World");
+Console.WriteLine("Hello \n" + "World \n");
 
 // STRING.FORMAT
 /* Formats an object, you specify the formatting you wish to perform, the following formats an integer and displays the currency symbol. In my case the US dollar Sign*/
-Console.WriteLine(string.Format("{0:C}", 5));
+Console.WriteLine("STRING FORMATING");
+Console.WriteLine(string.Format("{0:C}", 5) + "\n");
 
 // IF STATEMENTS
 /* if statement is used to execute code based on a condition the condition must evaluate to true for the code to execute.
@@ -55,6 +57,7 @@ Console.WriteLine(string.Format("{0:C}", 5));
  */
 
 // Example
+Console.WriteLine("IF Statement");
 if (year > 2010)
 {
     Console.WriteLine("Year is greater than 2010");
