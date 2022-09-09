@@ -2,6 +2,7 @@
 using Microsoft.VisualBasic;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
 
@@ -77,5 +78,46 @@ else
 {
     Console.WriteLine("The year is " + year + "\n");
 }
+
+// SWITCH STATEMENT
+/* Similar to the If else statement, however it has these benefits.
+ Much easier to read and maintain
+ Much cleaner then using nested if else
+ It only evaluates one variable */
+
+/* SYNTAX
+switch (switch_on)
+{
+case 1:
+        statements;
+      break;
+
+case 2:
+        statements;
+       break;
+
+default:
+} */
+
+//EXAMPLE 
+
+switch (year)
+{
+    case 2013:
+        Console.WriteLine("The year is 2013 ! \n");
+        break;
+
+    case 2015:
+        Console.WriteLine("The year is 2015 !\n");
+        break;
+
+    default:
+        Console.WriteLine("It`s " + year + " !");
+        break;
+}
+
+//The break keyword is required as it prevents case falling.
+
+
 
 
