@@ -114,10 +114,7 @@ switch (year)
     default:
         Console.WriteLine("It`s " + year + " !");
         break;
+        //The break keyword is required as it prevents case falling.
 }
-
-//The break keyword is required as it prevents case falling.
-
-
 
 
