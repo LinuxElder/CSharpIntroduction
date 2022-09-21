@@ -1,8 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Microsoft.VisualBasic;
+﻿using Microsoft.VisualBasic;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
+using System.Reflection;
 
 Console.WriteLine("Hello, World!");
 
@@ -112,9 +112,103 @@ switch (year)
         break;
 
     default:
-        Console.WriteLine("It`s " + year + " !");
+        Console.WriteLine("It`s " + year + " ! \n");
         break;
         //The break keyword is required as it prevents case falling.
 }
+
+/*LOOPS
+WHILE LOOP
+Continuously loops code until the condition becomes false.
+SYNTAX
+while (true)
+{
+}
+EXAMPLE
+while (Year >= 2013)
+{
+if (Year != 2100)
+{
+Console.WriteLine(Year++);
+}
+else
+{
+break;
+}
+}
+Make sure your condition evaluates to false at some point otherwise the loop is endless and it can result in errors.
+FOR LOOP
+Similar to the While Loop, but you specify when the loop will end.
+SYNTAX
+for (int i = 0; i < length; i++)
+{
+}
+EXAMPLE
+for (int i = 0; i <= 100; i++)
+{
+Console.WriteLine(i);
+}
+This prints out 1 to 100. The expression can be easily broken down like this:
+I = 0;
+I Is less than or equal to 100? (True)
+Increment I by 1
+When I reaches 100 it will stop because I will no longer be less than100 and will equal 100 so the condition is false.
+FOR EACH
+The for each loop is used to loop around a collection. (Such as an array)
+SYNTAX
+foreach (var item in collection)
+{
+}
+EXAMPLE
+foreach (string movie in MyMoveisOf2013)
+{
+Console.WriteLine(movie);
+}
+Outputs all the elements in the MyMoviesOf2013 array.
+*/
+
+// ADVANCED – EXCEPTIONS, METHODS & CLASSES
+// EXCEPTIONS
+// To catch any exceptions which are likely to occur you use a try catch block.
+
+/* SYNTAX
+try
+{
+}
+catch (Exception)
+{
+    throw;
+}
+*/
+
+// EXAMPLE
+try
+{
+    string result = "k";
+    Console.WriteLine(Convert.ToInt32(result) + 10);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+//The above code results in a format exception, because you can’t convert K to a number.
+/* CLASSES
+SYNTAX
+Class MyClassName
+{
+}
+*/
+
+// EXAMPLE
+
+MyCar menu=new MyCar();
+menu.DisplayMenu();
+
+//Methods Examples
+menu.Movie(BestMovies[1]);
+
+menu.MovieYear(BestMovies[1], year);
+
+Console.WriteLine(menu.Tomorrow());
 
 
